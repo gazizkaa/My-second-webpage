@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3 - Table and Form</title>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+  <h1 id="page-title">Student Grades</h1>
+
+  <!-- Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gaziza</td>
+        <td>Math</td>
+        <td>A</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>Aisha</td>
+        <td>Science</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>Daniel</td>
+        <td>English</td>
+        <td>A-</td>
+      </tr>
+      <tr>
+        <td>Arman</td>
+        <td>History</td>
+        <td>A</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h1 id="form-title">Feedback Form</h1>
+
+  <!-- Form -->
+  <form class="feedback-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+    <label for="role">Role:</label><br>
+    <select id="role" name="role">
+      <option>Student</option>
+      <option>Teacher</option>
+      <option>Other</option>
+    </select><br><br>
+
+    <label>Would you recommend this page?</label><br>
+   <div class="radio-group">
+  <label>
+    <input type="radio" name="feedback" value="yes"> Yes
+  </label>
+  <label>
+    <input type="radio" name="feedback" value="no"> No
+  </label>
+</div>
+
+
+
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" placeholder="Write your comments here..."></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Page Titles */
+#page-title, #form-title {
+  text-align: center;
+  color: black;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Table Styling */
+table {
+  width: 70%;
+  margin: 20px auto;
+  border-collapse: collapse; /* merges borders */
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center; /* center align */
+}
+
+thead {
+  background-color: pink;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* alternate row color */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.highlight-row {
+  background-color: #ffe4ec; /* special highlight */
+  font-weight: bold;
+}
+
+/* Form Styling */
+.feedback-form {
+  width: 400px;
+  margin: 40px auto;
+  background-color: #fff0f6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.feedback-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.radio-group {
+  display: flex;
+  gap: 20px;          /* space between Yes and No groups */
+  align-items: center;
+}
+
+.radio-group label {
+  display: flex;       /* make button + text behave as one unit */
+  align-items: center; /* align vertically */
+  gap: 4px;            /* small space between circle and text */
+  margin: 0;           /* remove weird extra spacing */
+}
+
+
+.feedback-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: pink;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: black;
+  color: pink;
+}
